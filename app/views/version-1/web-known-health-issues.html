@@ -1,0 +1,60 @@
+{% set page = {
+  title: 'Known health issues'
+} %}
+
+{% extends page.layout.file | d(layouts.base) %}
+
+{% block content_primary %}
+
+            <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                <h1 class="nhsuk-fieldset__heading">
+                  Do you have any long term conditions for which you are currently being treated?
+                </h1>
+              </legend>
+
+              <div class="app-callout app-callout--info">
+                <p data-test-id="Known-health-problem-callout-info">This includes anything you are regularly prescribed medicine for.</p>
+
+            </div>
+
+      <form action="#" method="post">
+              <div class="nhsuk-radios">
+
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="known-health-issues-1" name="known-health-issues" type="radio" value="yes">
+                  <label class="nhsuk-label nhsuk-radios__label" for="known-health-issues-1">
+                    Yes
+                  </label>
+                </div>
+
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="known-health-issues-2" name="known-health-issues" type="radio" value="ins">
+                  <label class="nhsuk-label nhsuk-radios__label" for="known-health-issues-2">
+                    I'm not sure
+                  </label>
+                </div>
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="known-health-issues-3" name="known-health-issues" type="radio" value="no">
+                  <label class="nhsuk-label nhsuk-radios__label" for="known-health-issues-3">
+                    No
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <br>
+
+
+
+
+       <!-- button and radio buttons need to be on the same form! -->
+        {{ button({
+          text: "Next"
+        }) }}
+
+      </form>
+
+
+{% endblock %}
