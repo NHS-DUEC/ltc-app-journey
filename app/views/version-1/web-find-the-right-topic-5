@@ -1,0 +1,302 @@
+{% extends "layout.html" %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% set pageName = "Find the right topic" %}
+
+{% block beforeContent %}
+  {{ backLink({
+    href: "web-sex-at-birth-5",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+ 
+  <div class="nhsuk-grid-row">
+    
+    
+
+   
+   
+    <div class="nhsuk-width-container">
+
+         
+      <div class="nhsuk-u-reading-width">
+         <h1 class="nhsuk-heading-xl" data-test-id="heading-text">Find the right topic</h1>
+
+            <a data-test-id="top-search-link" data-event-trigger="click" data-event-value="Search A-Z - main button" role="button" href="triage-start-v5" class="nhsuk-button app-button--tertiary nhsuk-u-margin-bottom-4" data-module="nhsuk-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="app-button__icon" viewBox="0 0 18 18" aria-hidden="true" focusable="false" width="24" height="24">
+                    <g stroke="#fff">
+                        <path d="M12,12l5,5Z" stroke-linejoin="round" stroke-width="1.75"></path>
+                        <circle cx="7" cy="7" r="6" fill="none" stroke-width="1.75"></circle>
+                    </g>
+                </svg>
+                <span>Search our A to Z</span>
+            </a>
+
+        <h2 class="nhsuk-heading-l" data-test-id="heading-text">Browse categories</h2>
+
+        <h3 class="nhsuk-heading-m" data-test-id="body-parts-subheading" id="parts-of-the-body">Parts of the body</h3>
+        <p class="nhsuk-hint nhsuk-u-margin-bottom-4" data-test-id="body-parts-subheading-hint" id="parts-of-the-body-hint">Choose the body part the symptom or injury affects.</p>
+            <ul class="nhsuk-list nhsuk-list--bullet" data-test-id="parts-of-the-body-categories-list">
+
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Skin, hair and nails" data-title="Skin, hair and nails">Skin, hair and nails</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>14 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes rashes, moles, bites and stings, small cuts and grazes</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Head, face and neck" data-title="Head, face and neck">Head, face and neck</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>30 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes eyes, ears, nose, mouth and throat</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-event-trigger="click" data-event-value="Category selected: Shoulders, arms and hands" data-title="Shoulders, arms and hands">Shoulders, arms and hands</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>12 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes shoulders, arms, wrists, hands and fingers</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Chest, breasts and back" data-title="Chest, breasts and back">Chest, breasts and back</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>12 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes upper and lower back, breasts and nipples</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Stomach and sides" data-title="Stomach and sides">Stomach and sides</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>11 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes pain or injury and feeling or being sick</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Genitals and bottom" data-title="Genitals and bottom">Genitals and bottom</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>14 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes problems peeing or pooing and sexual health problems</p>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Hips, legs and feet" data-title="Hips, legs and feet">Hips, legs and feet</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>11 topics<span aria-hidden="true">)</span></span>
+                        <p class="nhsuk-u-margin-bottom-0">includes hips, groin, legs, ankles, feet and toes</p>
+                </li>
+                </ul>
+
+            <h3 class="nhsuk-heading-m" data-test-id="other-problems-subheading" id="other-problems">Other problems</h3>
+            <p class="nhsuk-hint nhsuk-u-margin-bottom-4" data-test-id="other-problems-subheading-hint" id="other-problems-hint">Choose the one symptom that's bothering you most today.</p>
+            <ol class="nhsuk-list nhsuk-list--bullet" data-test-id="other-problems-categories-list">
+
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Accidental swallowing or breathing in" data-title="Accidental swallowing or breathing in">Accidental swallowing or breathing in</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Alcohol and substance abuse" data-title="Alcohol and substance abuse">Alcohol and substance abuse</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Blood pressure problems" data-title="Blood pressure problems">Blood pressure problems</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>1 topic<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Burns and scalds" data-title="Burns and scalds">Burns and scalds</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>3 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Catheters and stomas" data-title="Catheters and stomas">Catheters and stomas</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Coughs, colds and breathing problems" data-title="Coughs, colds and breathing problems">Coughs, colds and breathing problems</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>6 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Diabetes, blood sugar levels" data-title="Diabetes, blood sugar levels">Diabetes, blood sugar levels</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>1 topic<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Diarrhoea, sickness and vomiting" data-title="Diarrhoea, sickness and vomiting">Diarrhoea, sickness and vomiting</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>4 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Dizziness, falls, faints and tremor (shaking)" data-title="Dizziness, falls, faints and tremor (shaking)">Dizziness, falls, faints and tremor (shaking)</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>3 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: High temperature" data-title="High temperature">High temperature</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>3 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Mental health" data-title="Mental health">Mental health</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>5 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Palpitations" data-title="Palpitations">Palpitations</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>1 topic<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Problems with peeing or pooing" data-title="Problems with peeing or pooing">Problems with peeing or pooing</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>6 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Problems with wound treatments, dressings, casts, metal frames and drains" data-title="Problems with wound treatments, dressings, casts, metal frames and drains">Problems with wound treatments, dressings, casts, metal frames and drains</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Sexual health" data-title="Sexual health">Sexual health</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>1 topic<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Sleep problems and feeling tired" data-title="Sleep problems and feeling tired">Sleep problems and feeling tired</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+            
+                <li>
+                    <a href="triage-start-v5" data-test-id="category-title" data-event-trigger="click" data-event-value="Category selected: Sunburn and heatstroke" data-title="Sunburn and heatstroke">Sunburn and heatstroke</a>
+                    <span class="nhsuk-u-font-size-16 app-u-color-secondary-text"><span aria-hidden="true">(</span>2 topics<span aria-hidden="true">)</span></span>
+                </li>
+                </ol>
+
+            <hr class="app-section-break">
+
+     
+
+
+
+
+            <div class="app-callout app-callout--info">
+                <h2 data-test-id="help-finding-a-topic-subheading" class="nhsuk-heading-m">If you cannot find the right topic</h2>
+                <p data-test-id="help-finding-a-topic-information-1">111 online can only help with the topics on this page.</p>
+
+                    <p data-test-id="bottom-search-link">You can <a href="triage-start-v5" data-event-trigger="click" data-event-value="search the same topics in our A to Z list instead">search the same topics in our A to Z list instead.</a></p>
+
+                <p data-test-id="help-finding-a-topic-information-2">If you cannot find what you are looking for, you can:</p>
+                <ul data-test-id="help-finding-a-topic-list" class="nhsuk-list nhsuk-list--bullet">
+                    <li>
+                        <a data-pathway-number="PW1346" href="triage-start-v5" data-event-trigger="click" data-event-value="Rule out serious conditions" data-test-id="rule-out-serious-conditions">rule out the most serious conditions</a>
+                    </li>
+                    <li>
+                        <a href="triage-start-v5" data-event-trigger="click" data-event-value="NHS.UK Conditions">get information on a health problem or condition on the NHS website</a>
+                    </li>
+                </ul>
+            </div>
+
+    
+        </div>
+    </div>
+
+
+
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <hr class="app-section-break">
+
+        <!-- Does this page make sense section -->
+        <section>
+          <details data-test-id="feedback" class="nhsuk-details nhsuk-u-reading-width"><summary class="nhsuk-details__summary" data-event-trigger="click" data-event-value="Feedback reveal"><span class="nhsuk-details__summary-text">Does this page make sense?</span></summary>
+            <div class="nhsuk-details__text">
+                
+                <form data-test-id="feedback-content" action="https://staging.111.nhs.uk/Feedback/SubmitFeedback/" method="post" target="_blank" data-feedback-form="" autocomplete="off">
+                    <div class="nhsuk-form-group" data-feedback-form-section="">
+                          <fieldset class="nhsuk-fieldset">
+                              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m nhsuk-u-visually-hidden">Does the page make sense?</legend>
+                              <div class="nhsuk-radios">
+                                  <div class="nhsuk-radios__item">
+                                      <input class="nhsuk-radios__input" data-test-id="feedback-choice-yes" id="feedback-choice-yes" name="FeedbackChoice" type="radio" value="Yes">
+                                      <label class="nhsuk-label nhsuk-radios__label" for="feedback-choice-yes">Yes</label>
+                                  </div>
+
+                                  <div class="nhsuk-radios__item">
+                                      <input class="nhsuk-radios__input" data-test-id="feedback-choice-no" id="feedback-choice-no" name="FeedbackChoice" type="radio" value="No">
+                                      <label class="nhsuk-label nhsuk-radios__label" for="feedback-choice-no">No</label>
+                                  </div>
+                              </div>
+                          </fieldset>
+
+                          <div class="app-callout app-callout--info nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" data-test-id="u13-consent">
+                              <p>If you're under 13, you should have permission from your parent or guardian before leaving feedback.</p>
+                          </div>
+                      <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-top-4" data-test-id="feedback-tell-us-button">Tell us</button></div>
+                      
+                      <div data-feedback-form-section="" hidden="">
+        
+                          <fieldset class="nhsuk-fieldset">
+                                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m nhsuk-u-margin-bottom-0" data-test-id="feedback-explanation-1">Tell us how to make this page easier to understand</legend>                                                    
+                                <br>
+                                      <div class="nhsuk-character-count nhsuk-u-margin-bottom-0" data-module="nhsuk-character-count" data-maxlength="1200" data-threshold="75">
+                                        <div class="nhsuk-form-group">
+
+                                            <div class="app-callout app-callout--info" id="feedback-contact-warning">
+                                                <p data-test-id="feedback-explanation-no-pid">Do <strong>not</strong> leave any personal or contact information. No one will reply to requests for medical help or contact you.</p>
+                                            </div>
+
+                                            <label for="feedback-text" class="nhsuk-label">Your feedback</label>                            
+                                            <textarea class="nhsuk-textarea nhsuk-js-character-count" id="feedback-text" name="Text" rows="5" data-test-id="feedback-textarea" aria-describedby="feedback-contact-warning feedback-text-info" data-autosize="" data-original-aria-describedby="feedback-contact-warning feedback-text-info" style="overflow: hidden; overflow-wrap: break-word; resize: none; text-align: start; height: 152px;"></textarea><div class="nhsuk-hint nhsuk-character-count__message nhsuk-u-visually-hidden" id="feedback-text-info">You can enter up to 1200 characters</div><div class="nhsuk-hint nhsuk-character-count__message nhsuk-character-count__status nhsuk-character-count__message--disabled" aria-hidden="true">You have 1200 characters remaining</div><div class="nhsuk-character-count__sr-status nhsuk-u-visually-hidden" aria-live="polite" aria-hidden="true">You have 1200 characters remaining</div>
+                                        </div>
+                                      </div>
+                          </fieldset>
+
+                          <script type="application/json" data-feedback-form-section-validation-rules="">
+                          [
+                            {
+                                "id": "feedback-text",
+                                "name": "Text",
+                                "rule": "required",
+                                "message": "Enter your feedback"
+                            },
+                            {
+                                "id": "feedback-text",
+                                "name": "Text",
+                                "rule": "maxlength",
+                                "maxlength": 1200,
+                                "message": "Feedback should be fewer than 1200 characters long"
+                            },
+                            {
+                                "id": "feedback-text",
+                                "name": "Text",
+                                "rule": "PID",
+                                "message": "Your feedback cannot include any personal information or contact details"
+                            }
+                          ]
+                          </script>
+
+                          <div class="nhsuk-back-link"><button class="nhsuk-back-link__link" href="#">
+                              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                              </svg>
+                              Go back</button></div><button data-test-id="send-feedback-button" data-event-trigger="click" data-event-value="Send feedback" class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-2" type="submit">Send feedback</button>
+                        
+                      </div>
+                        
+                </form>
+
+            </div>
+          </details>
+        </section>
+    
+    </div>
+  
+  </div>
+
+
+  
+
+{% endblock %}

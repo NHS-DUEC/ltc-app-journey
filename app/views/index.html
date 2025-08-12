@@ -6,13 +6,39 @@
 
 {% block content_primary %}
 
-  <!-- You can delete the lines below -->
-  <h2 class="nhsuk-heading-l">
+  <!-- You can delete the lines below
+  <h1 class="nhsuk-heading-l">
     NHS prototype kit
     <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version
       {{version}}</span>
-  </h2>
+  </h1>
 
+  <hr>
+   -->
+
+  <h2 class="nhsuk-heading-l">
+    111 online - User Testing Prototype
+  </h2>
+  <p>
+    Here is the web prototype for our user testing today.
+   
+  </p>
+    {{ button({
+                text: "Go to web prototype",
+                href: "/version-1/index"
+              }) }}
+
+<p>
+    Here is the NHS App prototype.
+   
+  </p>
+    {{ button({
+                text: "Go to App prototype",
+                href: "/version-1/index"
+              }) }}
+
+
+ <!-- End of content 
   <hr>
 
   <h1 class="nhsuk-heading-xl">
@@ -44,6 +70,8 @@
     </li>
   </ul>
 
+
+
   <p>
     There is a selection of
     <a href="/example-templates">example page templates</a>
@@ -51,6 +79,8 @@
     <strong>/lib/example-templates/</strong>. To use these, copy and paste them into
     <strong>/app/views/</strong>.
   </p>
-  <!-- End of content -->
+  
+  
+  -->
 
 {% endblock %}
