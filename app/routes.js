@@ -2,11 +2,8 @@
 // External dependancies
 // ########################################################
 const express = require('express');
-const router = express.Router();
-
-
 const { set } = require('lodash');
-
+const router = express.Router();
 
 router.use('/components', require('./lib/routes/components'));
 router.use('/', require('./lib/routes/misc'));
@@ -16,7 +13,7 @@ router.use('/', require('./lib/routes/misc'));
 // Your routes beneath here
 // ########################################################
 
-router.use('/version-1', require('./routes/version-1'));
+// router.use('/version-1', require('./routes/version-1'));
 
 
 
