@@ -1,9 +1,8 @@
+{% set page = {
+  title: 'Find the right topic'
+} %}
 
-{% extends "layout.html" %}
-
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "Find the right topic" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -12,17 +11,9 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    
-    
 
-   
-    <div class="nhsuk-width-container">
+{% block content_primary %}
 
-         
-      <div class="nhsuk-u-reading-width">
          <h1 class="nhsuk-heading-xl" data-test-id="heading-text">Find the right topic</h1>
 
             <a data-test-id="top-search-link" data-event-trigger="click" data-event-value="Search A-Z - main button" role="button" href="web-triage-start-v1" class="nhsuk-button app-button--tertiary nhsuk-u-margin-bottom-4" data-module="nhsuk-button">
@@ -198,13 +189,9 @@
                 </ul>
             </div>
 
+
+
     
-        </div>
-    </div>
-
-
-    <div class="nhsuk-grid-column-two-thirds">
-
         <hr class="app-section-break">
 
         <!-- Does this page make sense section -->
@@ -290,9 +277,7 @@
           </details>
         </section>
     
-    </div>
-  
-  </div>
+
 
 
   

@@ -1,10 +1,9 @@
 
+{% set page = {
+  title: 'What is your age'
+} %}
 
-{% extends "layout.html" %}
-
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "What is your age" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -13,11 +12,7 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
-      
+{% block content_primary %}
     <form action="#" method="post" class="form">
            <!--
             <input type="hidden" name="SessionId" value="cf3da228-aefe-40bc-83de-bdba5998d26c">
@@ -66,11 +61,6 @@
 
 
       
-
-
-      </div>
-  </div>
-
 
       
       <hr class="app-section-break">
@@ -157,9 +147,6 @@
           </div>
         </details>
       </section>
-   
-    </div>
-  </div>
 
 
   

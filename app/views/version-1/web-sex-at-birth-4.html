@@ -1,23 +1,12 @@
+{% set page = {
+  title: 'Sex at birth'
+} %}
+
+{% extends page.layout.file | d(layouts.base) %}
 
 
-{% extends "layout.html" %}
+{% block content_primary %} 
 
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "Sex at birth" %}
-
-{% block beforeContent %}
-  {{ backLink({
-    href: "what-is-your-age-4",
-    text: "Back"
-  }) }}
-{% endblock %}
-
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
-      
           <form action="#" method="post" class="form">
 
 
@@ -155,11 +144,6 @@
           </div>
         </details>
       </section>
-   
-    </div>
-  </div>
 
-
-  
 
 {% endblock %}

@@ -1,12 +1,9 @@
 {% set page = {
-  
+  title: 'Before you start'
 } %}
 
-{% extends "layout.html" %}
+{% extends page.layout.file | d(layouts.base) %}
 
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "Before you start" %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -15,15 +12,9 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
+{% block content_primary %}
 
 
-
- 
-  <div class="nhsuk-grid-row">
-
-    <div class="nhsuk-grid-column-two-thirds">
 
             <!-- Change the page heading -->
 
@@ -137,8 +128,7 @@
         </details>
       </section>
    
-    </div>
-  </div>
+
 
 
   

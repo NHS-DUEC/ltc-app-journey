@@ -1,10 +1,9 @@
 
+{% set page = {
+  title: 'What is your home postcode'
+} %}
 
-{% extends "layout.html" %}
-
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "What is your home postcode" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -13,11 +12,9 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
-      
+{% block content_primary %}
+
+
     <form action="#" method="post" class="form">  
            <!--
             <input type="hidden" name="SessionId" value="cf3da228-aefe-40bc-83de-bdba5998d26c">
@@ -75,11 +72,7 @@
   
         </form>
 
-      </div>
-  </div>
-
-
-      
+  
       <hr class="app-section-break">
 
       <!-- Does this page make sense section -->
@@ -165,9 +158,6 @@
         </details>
       </section>
    
-    </div>
-  </div>
-
 
   
 

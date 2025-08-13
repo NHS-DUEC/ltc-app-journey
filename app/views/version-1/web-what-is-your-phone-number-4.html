@@ -1,10 +1,9 @@
 
+{% set page = {
+  title: 'What is your phone number'
+} %}
 
-{% extends "layout.html" %}
-
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "What is your phone number" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -13,10 +12,7 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+{% block content_primary %}
       
     <form action="#" method="post" class="form">
            <!--
@@ -74,9 +70,6 @@
 
       
 
-
-      </div>
-  </div>
 
 
       
@@ -165,9 +158,6 @@
         </details>
       </section>
    
-    </div>
-  </div>
-
 
   
 

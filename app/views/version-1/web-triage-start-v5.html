@@ -1,21 +1,18 @@
-{% extends "layout.html" %}
+{% set page = {
+  title: 'Triage start 5'
+} %}
 
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "Triage start 2" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
-     href: "web-find-the-right-topic-5",
+    href: "web-find-the-right-topic-5",
     text: "Back"
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
+{% block content_primary %}
 
-    <div class="nhsuk-grid-column-two-thirds">
 
             <!-- Change the page heading -->
 
@@ -117,10 +114,6 @@
           </div>
         </details>
       </section>
-   
-    </div>
-  </div>
-
 
   
 

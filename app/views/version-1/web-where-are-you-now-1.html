@@ -1,10 +1,9 @@
 
+{% set page = {
+  title: 'Where are you now'
+} %}
 
-{% extends "layout.html" %}
-
-{% set mainClasses = "nhsuk-main-wrapper--s" %}
-
-{% set pageName = "Where are you now" %}
+{% extends page.layout.file | d(layouts.base) %}
 
 {% block beforeContent %}
   {{ backLink({
@@ -13,10 +12,7 @@
   }) }}
 {% endblock %}
 
-{% block content %}
- 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+{% block content_primary %}
       
 
       <form method="post" novalidate="novalidate" action="/Location/Find">        
@@ -78,13 +74,6 @@
            <br>
 
         </form>
-
-
-
-           
-
-      </div>
-  </div>
 
 
 
@@ -177,10 +166,7 @@
         </details>
       </section>
    
-    </div>
-  </div>
-
-
+    
   
 
 {% endblock %}
