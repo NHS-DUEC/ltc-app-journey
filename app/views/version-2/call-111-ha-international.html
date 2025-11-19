@@ -1,0 +1,49 @@
+{% set page = {
+  title: 'Call 111 now'
+} %}
+
+{% extends page.layout.file | d(layouts.base) %}
+
+
+{% block content_primary %}
+
+       <div class="app-call-to-action">
+        <h1 data-test-id="outcome-heading" class="nhsuk-heading-l">Call 111 to speak to a health adviser now</h1>
+         </div>
+
+         <p>The contact number in your NHS App account is an international number. You need to call 111 with a UK phone number.</p>
+         
+
+            <h2>Why can't I do this online?</h2>
+              <p>Complex medical problems, or diagnosed conditions, cannot be dealth with online. You need to speak to a 111 health adviser, who will transfer you to a nurse if necessary.</p>
+
+              <h2>What happens when I call?</h2>
+              <p>Tell the health adviser we have not been able to finish your assessment online. Youw will be asked similar questions to begin with, but you will get the right help.</p>
+
+              
+              <br>
+            
+              <!--
+              <details class="nhsuk-details nhsuk-u-reading-width nhsuk-u-margin-top-4"><summary class="nhsuk-details__summary" data-event-trigger="click" data-event-value="I am unable to book a call"><span class="nhsuk-details__summary-text">I am unable to book a call</span></summary><div class="nhsuk-details__text">
+                  <p>
+                  Local NHS callback services are currently only available on the phone.
+                  There are <a href="/Help/OtherWays" target="_blank" data-event-trigger="click" data-event-value="Other ways to contact 111">other ways to contact 111<span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a>, but unfortunately, you'll have to provide all your answers again.
+              </p>
+              </div></details>
+              
+              --> 
+
+        <hr class="app-section-break">
+                <div class="nhsuk-u-reading-width">
+                    <a href="#" class="nhsuk-link">Change my previous answer</a>
+                </div>
+
+
+  
+    
+   
+
+
+  
+
+{% endblock %}
