@@ -1,0 +1,47 @@
+{% set page = {
+  title: 'Call 111 now'
+} %}
+
+{% extends page.layout.file | d(layouts.base) %}
+
+
+{% block content_primary %}
+
+       
+            <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">Sorry, we could not send your details to 111</h1>
+              
+            <p>Call 111 to speak to a health adviser now. The health adviser will not have your personal details in advance.</p>
+
+            
+            
+             <br>
+              <!--
+              <details class="nhsuk-details nhsuk-u-reading-width nhsuk-u-margin-top-4"><summary class="nhsuk-details__summary" data-event-trigger="click" data-event-value="I am unable to book a call"><span class="nhsuk-details__summary-text">I am unable to book a call</span></summary><div class="nhsuk-details__text">
+                  <p>
+                  Local NHS callback services are currently only available on the phone.
+                  There are <a href="/Help/OtherWays" target="_blank" data-event-trigger="click" data-event-value="Other ways to contact 111">other ways to contact 111<span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a>, but unfortunately, you'll have to provide all your answers again.
+              </p>
+              </div></details>
+              
+              --> 
+
+               <hr class="app-section-break">
+                <div class="nhsuk-u-reading-width">
+                   <h2>What to do if you feel worse</h2>
+                   <p>Use <a href="#" class="nhsuk-link">111 online</a> again or call 111 if:</p>
+                    <ul>
+                      <li>
+                          your symptoms get worse
+                      </li>
+                      <li>
+                          you have other new symptoms
+                      </li>
+                     
+                      
+                  </ul>
+            
+                  <p>If you are deaf or hard of hearing there are <a href="#" class="nhsuk-link">other ways you can contact 111</a>.</p>
+                </div>
+  
+
+{% endblock %}
