@@ -1,0 +1,56 @@
+{% set page = {
+  title: 'Call 111 now'
+} %}
+
+{% extends page.layout.file | d(layouts.base) %}
+
+
+{% block content_primary %}
+
+       
+            <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">Call 111</h1>
+              <p>Deaf people can use text relay to call 18001 111.</p>
+
+              <p>We are unable to book a call for you at the moment.</p>
+
+              <p>You need to call 111 to get more help. Tell them you completed an assessment online.
+              </p>
+
+              <p>When you call 111 the health adviser will:</p>
+                  <ul>
+                      <li>
+                          ask you to repeat your answers
+                      </li>
+                      <li>
+                          transfer you to a nurse if necessary
+                      </li>
+                     
+                      <li>
+                          book an appointment for you if you need one
+                      </li>
+                  </ul>
+            
+
+              <br>
+
+              <div class="app-callout app-callout--info">
+                <p data-test-id="Known-health-problem-callout-info">Your answers mean you do need to speak to someone, so it is important that you call 111.</p>
+
+            </div>
+             <br>
+
+            
+             <br>
+              <!--
+              <details class="nhsuk-details nhsuk-u-reading-width nhsuk-u-margin-top-4"><summary class="nhsuk-details__summary" data-event-trigger="click" data-event-value="I am unable to book a call"><span class="nhsuk-details__summary-text">I am unable to book a call</span></summary><div class="nhsuk-details__text">
+                  <p>
+                  Local NHS callback services are currently only available on the phone.
+                  There are <a href="/Help/OtherWays" target="_blank" data-event-trigger="click" data-event-value="Other ways to contact 111">other ways to contact 111<span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a>, but unfortunately, you'll have to provide all your answers again.
+              </p>
+              </div></details>
+              
+              --> 
+
+  
+
+{% endblock %}
