@@ -17,13 +17,27 @@
 
 
        
-            <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">You need a chest x-ray</h1>
-              <div class="app-callout app-callout--info">
-                    <p data-test-id="gender-callout-info-1">Insert explanatory content here if needed.</p>
-                </div>
+            <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">You need a chest X-ray in the next few days</h1>
 
-              <p>Insert main content here.</p>
-            <!--
+              <p>Sometimes having a cough or other symptoms for more than 3 weeks can be a sign of lung cancer. A chest X-ray will help doctors decide what other tests and investigations you might need.</p>
+            
+              <div class="nhsuk-warning-callout">
+                  <h3 class="nhsuk-warning-callout__label">
+                    <span role="text">
+                      <span class="nhsuk-u-visually-hidden">Important: </span>
+                      Important
+                    </span>
+                  </h3>
+                  <p>It’s important to remember that only 1 in 100 people are diagnosed with lung cancer following a chest X-ray.</p>
+              </div>
+
+           <h2>Choose a hospital</h2>
+
+           <p>You can request a chest X-ray at one of 6 local sites. The whole process should not take more than half an hour.</p>
+
+           <p>You do not need to contact your GP until the results of the X-ray are back.</p>
+
+              <!--
               <p>Before we transfer you, we will need to know your:</p>
                   <ul>
                       <li>
@@ -45,7 +59,7 @@
             <form method="post">
                   
                     {{ button({
-                      text: "Next", 
+                      text: "Request a chest X-ray at this site", 
                       href: "web-where-are-you-now-3"
                     }) }}
                     

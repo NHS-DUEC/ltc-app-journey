@@ -16,20 +16,29 @@
 
 
 
-       
-             <div class="app-call-to-action">
-              <h3>Content about patient must contact their GP and why.</h3>
-            
-              <p class="nhsuk-u-margin-bottom-0"></p> 
-            </div>
+              <div class="nhsuk-warning-callout">
+                  <h3 class="nhsuk-warning-callout__label">
+                    <span role="text">
+                      <span class="nhsuk-u-visually-hidden">You need to know</span>
+                      You need to know
+                    </span>
+                  </h3>
+                  <p>After you have had your X-ray the results will be sent to your GP surgery in about 2 weeks.</p>
 
+                    <p>You must contact the GP surgery to find out the results. The surgery will not contact you.</p>
+
+                      <p>The GP might want to do other investigations like blood tests, to find out what is causing your symptoms.</p>
+              </div>
+
+       
+      
                     
      
               <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="acknowledgement" name="acknowledgement" type="checkbox" value="acknowledgement">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="acknowledgement">
-                    I will contact my GP
+                    I understand
                   </label>
                 </div>
                
@@ -41,7 +50,7 @@
             <form method="post">
                   
                     {{ button({
-                      text: "Start my request", 
+                      text: "Next", 
                       href: "web-where-are-you-now-3"
                     }) }}
                     
