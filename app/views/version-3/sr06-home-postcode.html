@@ -13,51 +13,90 @@
 {% endblock %}
 
 {% block content_primary %}
-      <form method="post">
-        <div class="nhsuk-width-container">
+    
 
-           <h1 data-test-id="heading-text" class="nhsuk-heading-l">What is your home address at LS9 8QS?</h1>
+        <div class="nhsuk-form-group">
+            <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                    Is LS9 8QS
+                        <!-- {{ data.CurrentPostcode3 }} -->
+                    your home postcode?
+                    </h1>
+                </legend>
+                                        
+      
+                    <div class="nhsuk-radios" data-module="nhsuk-radios">
+                                        <div class="nhsuk-radios__item">
+                                            <input class="nhsuk-radios__input" id="is-home-postcode-1" name="is-home-postcode-1" type="radio" value="yes" data-aria-controls="conditional-postcode">
+                                            <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-1">
+                                            Yes
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="nhsuk-radios__item">
+                                            <input class="nhsuk-radios__input" id="is-home-postcode-2" name="is-home-postcode-2" type="radio" value="no" data-aria-controls="conditional-postcode-2">
+                                            <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-2">
+                                            No
+                                            </label>
+                                        </div>
+                                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-postcode-2">
+                                            <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label" for="home_postcode">
+                                                Your home postcode
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-u-width-two-thirds" id="home_postcode" name="home_postcode" type="text">
+                                            </div>
+                                        </div>
+                                        
+                                        
+                    </div>
+                </fieldset>
+         </div>
 
 
-                        <ul class="app-option-list">
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="58103738" class="app-button--link app-option-list__button">Association Of British Insurers, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="57359091" class="app-button--link app-option-list__button">Sedgwick International UK, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="51417953" class="app-button--link app-option-list__button">Accenture Software, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="53338709" class="app-button--link app-option-list__button">Argent Catering Solutions, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="28288655" class="app-button--link app-option-list__button">Aspen Re, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="27878553" class="app-button--link app-option-list__button">Broadgate Estates, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="27775779" class="app-button--link app-option-list__button">Davy Wine Bar, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="53338712" class="app-button--link app-option-list__button">Fjord Ltd, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="53215841" class="app-button--link app-option-list__button">Haz Restaurant, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="50594772" class="app-button--link app-option-list__button">I Q U W Administration Services Ltd, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="51303363" class="app-button--link app-option-list__button">Jones Bootmaker, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="51303389" class="app-button--link app-option-list__button">Molton Brown Cosmetics, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="56068031" class="app-button--link app-option-list__button">Next Retail Ltd, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="53338713" class="app-button--link app-option-list__button">Q B E Insurance (Europe) Ltd, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="50288532" class="app-button--link app-option-list__button">Travelers, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                                <li class="app-option-list__item"><button type="submit" data-test-id="address-option-button" name="currentAddress" value="53256668" class="app-button--link app-option-list__button">Williams Lea, Plantation Place, 30 Fenchurch Street, London, EC3M 3BD</button></li>
-                        </ul>
+ <form action="#" method="post" class="form">
 
-                        <hr class="app-section-break">
 
-            <button type="submit" data-test-id="address-not-shown" name="currentAddress" value="AddressNotListed" class="app-button--link nhsuk-u-margin-bottom-4">I'm not at any of these places</button>
-          </div>          
 
-                    
-      </form>
-              <!--
-              <details class="nhsuk-details nhsuk-u-reading-width nhsuk-u-margin-top-4"><summary class="nhsuk-details__summary" data-event-trigger="click" data-event-value="I am unable to book a call"><span class="nhsuk-details__summary-text">I am unable to book a call</span></summary><div class="nhsuk-details__text">
-                  <p>
-                  Local NHS callback services are currently only available on the phone.
-                  There are <a href="/Help/OtherWays" target="_blank" data-event-trigger="click" data-event-value="Other ways to contact 111">other ways to contact 111<span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a>, but unfortunately, you'll have to provide all your answers again.
-              </p>
-              </div></details>
-              
-              --> 
+            <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                
+              </legend>
+             
 
+          
+      
+              <div class="nhsuk-radios">
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="is-home-postcode-1" name="is-home-postcode" type="radio" value="yes">
+                  <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-1">
+                    Yes  
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="is-home-postcode-2" name="is-home-postcode" type="radio" value="ins">
+                  <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-2">
+                    No
+                  </label>
+                </div>
+                
+      
+              </div>
+            </fieldset>
         
+            <br>
 
 
+              {{ button({
+                text: "Next"
+              }) }}
+
+              
+
+          </form>
   
     
 
