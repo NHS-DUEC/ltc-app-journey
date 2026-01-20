@@ -14,7 +14,7 @@
 
 {% block content_primary %}
     
-
+    <form action="#" method="post" class="form">
         <div class="nhsuk-form-group">
             <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
                 <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
@@ -48,55 +48,21 @@
                                             <input class="nhsuk-input nhsuk-u-width-two-thirds" id="home_postcode" name="home_postcode" type="text">
                                             </div>
                                         </div>
-                                        
-                                        
+                                                  
                     </div>
                 </fieldset>
          </div>
 
 
- <form action="#" method="post" class="form">
 
-
-
-            <fieldset class="nhsuk-fieldset">
-              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                
-              </legend>
-             
-
-          
-      
-              <div class="nhsuk-radios">
-          
-                <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="is-home-postcode-1" name="is-home-postcode" type="radio" value="yes">
-                  <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-1">
-                    Yes  
-                  </label>
-                </div>
-          
-                <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="is-home-postcode-2" name="is-home-postcode" type="radio" value="ins">
-                  <label class="nhsuk-label nhsuk-radios__label" for="is-home-postcode-2">
-                    No
-                  </label>
-                </div>
-                
-      
-              </div>
-            </fieldset>
-        
             <br>
-
 
               {{ button({
                 text: "Next"
               }) }}
 
-              
-
-          </form>
+            
+    </form>
   
     
 
