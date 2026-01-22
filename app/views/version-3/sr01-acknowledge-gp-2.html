@@ -25,17 +25,30 @@
                   <p>Your GP might want to do further checks, like blood tests, to find out what's causing your symptoms.</p>
 
                   
-                <div class="nhsuk-button-group">
-
-                  <a class="nhsuk-button nhsuk-button--reverse" data-module="nhsuk-button" href="#" role="button" draggable="false">
-                    I know when to contact my GP
-                  </a>
-                 
-                </div>
+               
               </div>
             </div>
 
-          
+            <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="acknowledgement" name="acknowledgement" type="checkbox" value="acknowledgement">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="acknowledgement">
+                    I understand
+                  </label>
+                </div>
+               
+                <br>
+
+
+
+            <form method="post">
+                  
+                    {{ button({
+                      text: "Next", 
+                      href: "web-where-are-you-now-3"
+                    }) }}
+                    
+             </form>
            
 
         <!--
