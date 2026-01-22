@@ -1,73 +1,56 @@
 {% set page = {
-  title: 'Your confirmation'
+  title: 'Acknowledgement'
 } %}
 
 {% extends page.layout.file | d(layouts.base) %}
 
 
+{% block beforeContent %}
+  {{ backLink({
+    href: "web-a-e-visit",
+    text: "Back"
+  }) }}
+{% endblock %}
+
 {% block content_primary %}
 
+
+
+              <div class="nhsuk-warning-callout">
+                  <h3 class="nhsuk-warning-callout__label">
+                    <span role="text">
+                      <span class="nhsuk-u-visually-hidden">You need to know</span>
+                      You need to know
+                    </span>
+                  </h3>
+                  <p>After you have had your X-ray the results will be sent to your GP surgery in about 2 weeks.</p>
+
+                    <p>You must contact the GP surgery to find out the results. The surgery will not contact you.</p>
+
+                      <p>The GP might want to do other investigations like blood tests, to find out what is causing your symptoms.</p>
+              </div>
+
        
-            <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">Your request for a chest X-ray has been sent</h1>
-              <p>We have sent your request to XXXXXX. You should go to the hospital during opening hours, as soon as you can in the next few days.</p>
-              <p>You do not need an appointment - just walk in and ask for the “self-request chest X-ray service”.</p>
-                  
-              <div class="app-service-details">
-                    <div class="app-service-details__content">
-                            <span data-test-id="service-alias" class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold">Chest X-ray</span>
-
-                            <span class="nhsuk-u-visually-hidden"> - </span>
-                            <br aria-hidden="true">
-                            <span data-test-id="service-name" class="nhsuk-u-font-size-19 nhsuk-u-font-weight-normal">Radiology Department</span>
-                            <p data-test-id="service-detail-address">
-                                St James’s University Hospital<br>
-                                Beckett St, Harehills<br>
-                                Leeds<br>
-                                LS9 7TF<br>
-
-                          <p data-test-id="opening-time-text">Open today: XX hours</p>
-                          <p data-test-id="miles-away-text">12.7 miles away</p>
-
-                         
-                           <p><a href="" data-event-trigger="click" data-event-value="Get directions">Hide map <span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a></p>
-                             
-                    </div>
-
-                    <!--- Map view with drop pin --> 
-                    <div class="app-service-details__map">
-                        <div class="app-service-details__map__gmap" style="position: relative; overflow: hidden;">
-                            <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-                                <div>
-                                    <iframe src="https://www.google.com/maps/d/embed?mid=1kkeLfW5lywID52RcYjAJ5ZccaC_-gvQ&ehbc=2E312F&noprof=1" width="300" height="300"></iframe>
-                                </div>
-                            </div>
-                        </div>
-   
-                    </div>
-              
-                    <br>
- 
-                  <!--- Get directions link -->
-                    <div class="app-service-details__content">
-                        <p><a data-test-id="get-directions-link" class="app-u-js-only" target="_blank" rel="noreferrer noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=BB1 2EE&amp;destination=Chorley and South Ribble District Hospital, Preston Road, Chorley, PR7 1PP&amp;zoom=16" data-event-trigger="click" data-event-value="Get directions">Get directions <span class="nhsuk-u-visually-hidden"> (opens in a new tab)</span></a></p>
-                    </div>
+      
+                    
+     
+              <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="acknowledgement" name="acknowledgement" type="checkbox" value="acknowledgement">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="acknowledgement">
+                    I understand
+                  </label>
+                </div>
                
-        </div>
-
-              <h2>What happens during the chest X-ray</h2>
-              <p>When you arrive at the hospital you will usually wait no more than about 10 minutes. The X-ray takes about 20 minutes.</p>
-              <p>You will undress to the waist and be given a hospital gown to wear. You keep your belongings with you.</p>
-              <p>Find out more about what happens during an X-ray (or video if we get one)</p>
-            
-              <h2>Contacting your GP surgery for the results</h2>
-              <p>The results will be sent to your GP surgery about 2 weeks after the X-ray.</p>
-              <p>You must contact them to find out what happens next.</p>
-
                 <br>
+           
+
+
+
             <form method="post">
                   
                     {{ button({
-                      text: "Send me a copy of this page", 
+                      text: "Next", 
                       href: "web-where-are-you-now-3"
                     }) }}
                     
