@@ -21,7 +21,10 @@
  
           <h1 class="nhsuk-heading-xl" data-test-id="outcome-heading">You need a chest X-ray in the next few days</h1>
 
-              <p>Sometimes having a cough or other symptoms for more than 3 weeks can be a sign of lung cancer. A chest X-ray will help doctors decide what other tests and investigations you might need.</p>
+              <p>Sometimes having a cough or other symptoms for more than 3 weeks can be a sign of lung cancer.</p>
+              <p>A chest X-ray will help doctors decide what other tests and investigations you might need.</p>
+              <p>The whole process should not take more than half an hour.</p>
+              <p>You do not need to contact your GP until the results of the X-ray are back.</p>
             
               <div class="nhsuk-warning-callout">
                   <h3 class="nhsuk-warning-callout__label">
@@ -44,8 +47,7 @@
       <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-4">
              <h2>Choose a hospital</h2>
                     <p>We found 2 local chest x-ray sites available near {{ data.answers.location.current.postcode | default('LS9 8QS') }}.</p>
-                    <p> The whole process should not take more than half an hour.</p>
-                    <p>You do not need to contact your GP until the results of the X-ray are back.</p>
+                    
 
       <button type="submit" name="answers[pharmacy]" value="highstreet" class="pharmacy-card-i">
         <div class="pharmacy-details-i">
@@ -98,8 +100,9 @@
       </button>
 
     </fieldset>
-                  
-
+    <br>
+     <a href="#">Change my location</a>
+    <br>
         <!--
         <button data-test-id="next-button" type="submit" class="nhsuk-button " data-module="nhsuk-button">Next</button>
         <hr class="app-section-break app-section-break--thin-wide">
@@ -107,14 +110,7 @@
         <hr class="app-section-break">
         -->
 
-      <br>
-
-          {{ button({
-                      text: "Request a chest X-ray at this site"
-                    }) }}
-   
-
-      <br>
+     
          
 
 
